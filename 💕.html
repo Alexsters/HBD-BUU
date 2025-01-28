@@ -10,7 +10,7 @@
             font-family: 'Lobster', cursive;
             margin: 0;
             padding: 0;
-            background: #575656; /* Fondo negro */
+            background: #575656; /* Fondo gris oscuro */
             color: #f0f0f0; /* Texto claro para contraste */
         }
         header {
@@ -28,11 +28,15 @@
             max-width: 1000px;
             margin: 20px auto;
             padding: 20px;
-            background: #666; /* Gris oscuro */
+            background: #444; /* Gris oscuro */
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             text-align: center;
             animation: slideIn 1s;
+        }
+        /* Contenedor de la primera imagen con fondo más claro */
+        .container:first-of-type {
+            background: #666; /* Fondo gris más claro */
         }
         .image-container {
             position: relative;
@@ -105,13 +109,13 @@
         Para el ser que iluminó mi vida
     </header>
     <div class="container">
-    <p>
-        Desde el día en que te conocí, mi mundo cambió por completo. <span class="highlight">Tú eres mi inspiración</span>, mi refugio y mi felicidad. Este espacio está creado solo para ti, porque mereces lo mejor en cada instante.
-    </p>
-    <p>
-        Hoy celebro a esa persona única que hace de cada momento algo mágico. <span class="highlight">Gracias por ser tú</span>, por llenar mi vida de amor y por compartir conmigo tu luz.
-    </p>
-</div>
+        <p>
+            Desde el día en que te conocí, mi mundo cambió por completo. <span class="highlight">Tú eres mi inspiración</span>, mi refugio y mi felicidad. Este espacio está creado solo para ti, porque mereces lo mejor en cada instante.
+        </p>
+        <p>
+            Hoy celebro a esa persona única que hace de cada momento algo mágico. <span class="highlight">Gracias por ser tú</span>, por llenar mi vida de amor y por compartir conmigo tu luz.
+        </p>
+    </div>
     <div class="container">
         <div class="image-container">
             <img src="Imagen 1 Proyect.jpg" alt="Imagen especial 1">
@@ -120,15 +124,7 @@
         <a href="#" class="button" id="showDedicatoriaBtn">Ver Dedicatoria Especial</a>
         <div id="dedicatoria">
             <h2>Dedicatoria Especial</h2>
-            <p><span class="highlight">Feliz Cumpleaños, Amor de Mi Vida
-                Hoy celebramos un hito muy especial: tus 21 años. Aunque la distancia nos separe, quiero que sepas que cada latido de mi corazón está contigo, y cada pensamiento que tengo está lleno de amor y cariño hacia ti. 
-                Este es un momento de alegría y reflexión, un nuevo capítulo en la hermosa historia que estás escribiendo. A tus 21 años, te encuentras en la flor de la vida, con un mundo lleno de oportunidades esperándote. Quiero que sepas que, aunque estés lejos de tu familia y amigos, nunca estarás sola. Siempre estaré aquí, apoyándote y animándote a seguir tus sueños.
-                Recuerda que cada desafío que enfrentas es solo una oportunidad para crecer y brillar aún más. Eres una persona increíble, llena de luz y potencial. La distancia puede ser dura, pero también es un recordatorio de lo fuerte que eres y de lo mucho que has logrado. 
-                Así que, en este día tan especial, levanta la mirada al cielo y siente el amor que te rodea. Cada estrella brilla en honor a ti, y cada rayo de sol acaricia tu piel como un abrazo cálido de quienes te aman. 
-                Te deseo un cumpleaños lleno de risas, amor y momentos inolvidables. Que cada día de este nuevo año de vida te acerque más a tus sueños y te llene de felicidad. Estoy emocionado por todo lo que el futuro tiene reservado para ti, y no puedo esperar a compartir cada momento contigo.
-                ¡Feliz cumpleaños, mi amor! Que este nuevo año esté lleno de aventuras, amor y la certeza de que siempre estaré a tu lado, sin importar la distancia.
-                Con todo mi amor,
-                Yamith Alexander Ardila Cabrera - Yamito - Bae - Osito - Inge - Negro - Alexsters - YAAC - El Amor de tu Vida Basicamente.</span></p>
+            <p><span class="highlight">Feliz Cumpleaños, Amor de Mi Vida...</span></p> <!-- Continúa el contenido de la dedicatoria aquí -->
         </div>
 
         <a href="#" class="button" id="showMemoriesBtn">Ver Más Recuerdos</a>
@@ -161,7 +157,6 @@
         <div class="frases-container">
             <a href="#" class="button" id="showFrasesBtn">100 Razones por las cuales te amo</a>
             <div id="frases">
-                <h2>Frases que Definen Nuestro Amor</h2>
                 <div class="frase">1. Porque siempre iluminas mi vida con tu sonrisa.</div>
                 <div class="frase">2. Porque tu risa es música para mis oídos.</div>
                 <div class="frase">3. Porque desde el primer momento supe que eras especial.</div>
@@ -263,55 +258,8 @@
                 <div class="frase">99. Porque cada día contigo es una nueva oportunidad para amarte.</div>
                 <div class="frase">100. Porque simplemente, eres tú, mi todo.</div>
             </div>
-            <a href="#" class="button" id="hideFrasesBtn" style="display: none;">Ocultar Este Apartado chiquito</a> <!-- Botón para ocultar -->
+            </div>
         </div>
     </div>
-    <div class="container">
-        <p><h2>
-            Espero que simpre sea un Hata Luego y/ó un Hasta Pronto pero jamás un Hasta Nunca.
-            </h2>
-        </p>
-        <div class="image-container">
-            <img src="Imagen 4 Proyect.jpg" alt="Imagen especial 4">
-        </div>
-        <div class="image-container">
-            <img src="Imagen 5 Proyect.jpg" alt="Imagen especial 5">
-        </div>
-    </div>
-    <script>
-        document.getElementById('showMemoriesBtn').addEventListener('click', function(event) {
-            event.preventDefault(); // Evitar que el botón recargue la página
-            document.getElementById('moreMemories').style.display = 'block'; // Mostrar recuerdos
-            this.style.display = 'none'; // Ocultar el botón
-            document.getElementById('hideMemoriesBtn').style.display = 'inline-block'; // Mostrar botón para ocultar recuerdos
-        });
-
-        document.getElementById('hideMemoriesBtn').addEventListener('click', function(event) {
-            event.preventDefault(); // Evitar que el botón recargue la página
-            document.getElementById('moreMemories').style.display = 'none'; // Ocultar recuerdos
-            document.getElementById('showMemoriesBtn').style.display = 'inline-block'; // Mostrar botón para ver recuerdos
-            this.style.display = 'none'; // Ocultar el botón
-        });
-
-        document.getElementById('showFrasesBtn').addEventListener('click', function(event) {
-            event.preventDefault(); // Evitar que el botón recargue la página
-            document.getElementById('frases').style.display = 'block'; // Mostrar frases
-            this.style.display = 'none'; // Ocultar el botón
-            document.getElementById('hideFrasesBtn').style.display = 'inline-block'; // Mostrar botón para ocultar frases
-        });
-
-        document.getElementById('hideFrasesBtn').addEventListener('click', function(event) {
-            event.preventDefault(); // Evitar que el botón recargue la página
-            document.getElementById('frases').style.display = 'none'; // Ocultar frases
-            document.getElementById('showFrasesBtn').style.display = 'inline-block'; // Mostrar botón para ver frases
-            this.style.display = 'none'; // Ocultar el botón
-        });
-
-        document.getElementById('showDedicatoriaBtn').addEventListener('click', function(event) {
-            event.preventDefault(); // Evitar que el botón recargue la página
-            document.getElementById('dedicatoria').style.display = 'block'; // Mostrar dedicatoria
-            this.style.display = 'none'; // Ocultar el botón
-        });
-    </script>
 </body>
 </html>
